@@ -1,0 +1,24 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:headless": "cypress run --headless",
+    "cypress:run:headless:record": "cypress run --headless --record"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.3.3"
+  },
+  "dependencies": {
+    "@cypress/grep": "^4.1.0",
+    "@faker-js/faker": "github:faker-js/faker",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
