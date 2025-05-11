@@ -7,18 +7,22 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:run:headless": "cypress run --headless",
-    "cypress:run:headless:record": "cypress run --headless --record"
+    "cypress:run:headless:record": "cypress run --headless --record",
+    "cypress:run:report": "npx cypress run --reporter mochawesome",
+    "report": "npx cypress run && npx mochawesome-merge cypress/results/*.json > mochawesome.json && npx marge mochawesome.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "cypress": "^14.3.3"
+    "cypress": "^14.3.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0"
   },
   "dependencies": {
     "@cypress/grep": "^4.1.0",
-    "@faker-js/faker": "github:faker-js/faker",
     "cypress-mochawesome-reporter": "^3.8.2"
   }
 }

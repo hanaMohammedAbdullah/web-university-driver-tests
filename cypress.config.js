@@ -7,6 +7,14 @@ module.exports = defineConfig({
   requestTimeout: 10000,
   // - Response timeout: is 30000 by default, used to set the response timeout
   responseTimeout: 10000,
+  reporter: "cypress-mochawesome-reporter",
+  reporterOptions: {
+    reportDir: "cypress/results",
+    overwrite: false,
+    html: false,
+    json: true,
+  },
+
   e2e: {
     setupNodeEvents(on, config) {
       // this is a plugin that generates mochawesome reports
@@ -41,6 +49,7 @@ module.exports = defineConfig({
     // - Video compression: is 32 by default, used to set the video compression
     videoCompression: 32,
     // - Experimental interactive run events: is true by default, used to enable experimental interactive run events
+    specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
 
     experimentalInteractiveRunEvents: true,
   },
