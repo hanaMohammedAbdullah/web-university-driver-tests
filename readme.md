@@ -75,6 +75,3 @@ npx mochawesome-report-generator merged-report.json
 
 Feel free to fork this repository, try out the tests, or even add your own examples as you learn.
 
----
-
-Would you like a version with badge support or GitHub Actions integration added?
