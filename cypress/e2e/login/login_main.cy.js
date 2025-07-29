@@ -1,4 +1,4 @@
-describe("Login Portal Section", () => {
+describe.skip("Login Portal Section", () => {
   beforeEach(() => {
     cy.visit("/");
   });

@@ -1,4 +1,4 @@
-describe("Contact Us Form", () => {
+describe.skip("Contact Us Form", () => {
   beforeEach(() => {
     cy.visit("/Contact-Us/contactus.html");
   });

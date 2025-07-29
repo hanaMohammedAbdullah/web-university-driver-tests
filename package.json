@@ -4,12 +4,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "cypress open",
+    "run": "cypress run",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:run:headless": "cypress run --headless",
     "cypress:run:headless:record": "cypress run --headless --record",
     "cypress:run:report": "npx cypress run --reporter mochawesome",
-    "report": "npx cypress run && npx mochawesome-merge cypress/results/*.json > mochawesome.json && npx marge mochawesome.json"
+    "report": "npx cypress run && npx mochawesome-merge cypress/results/*.json > mochawesome.json && npx marge mochawesome.json",
+    "stg:web": "cypress run --config-file stag.config.js",
+    "prod:web": "cypress run --config-file prod.config.js",
+    "stg:open": "cypress open --env configFile=staging",
+    "contact-us-po": "cypress run --spec cypress/e2e/contact-us/contact-us.po.cy.js"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,8 @@
+{
+  "baseUrl": "https://automation-staging.example.com",
+  "env": {
+    "name": "Jone Doe",
+    "username": "stagingUser",
+    "password": "stagingPass"
+  }
+}

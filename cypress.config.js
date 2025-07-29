@@ -25,6 +25,7 @@ module.exports = defineConfig({
       // // this is a plugin that allows to use grep to filter tests
       // require("@cypress/grep/src/plugin")(on);
     },
+
     // - Base url: is used to set the base url for all the urls in the tests
     // baseUrl: "http://localhost:8080/",
     baseUrl: "https://webdriveruniversity.com/",
@@ -52,5 +53,12 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
 
     experimentalInteractiveRunEvents: true,
+    // add an envfile here please
+    env: {
+      // Add any environment variables you need here
+      // For example, if you have an env file, you can load it here
+      webdriveruni_homepage: "https://webdriveruniversity.com/",
+      // MY_ENV_VAR: process.env.MY_ENV_VAR || 'default_value',
+    },
   },
 });
