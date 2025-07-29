@@ -1,7 +1,7 @@
 import HomePage_PO from "../../support/pageObjects/web-driver-uni/HomePage_PO.JS";
 import Contact_Us_PO from "../../support/pageObjects/web-driver-uni/Contact_Us_PO.JS";
 
-describe.skip("Contact Us Form", () => {
+describe("Contact Us Form", () => {
   beforeEach(() => {
     // cy.visit("/Contact-Us/contactus.html");
     const homePage = new HomePage_PO();

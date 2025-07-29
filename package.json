@@ -14,7 +14,8 @@
     "report": "npx cypress run && npx mochawesome-merge cypress/results/*.json > mochawesome.json && npx marge mochawesome.json",
     "stg:web": "cypress run --config-file stag.config.js",
     "prod:web": "cypress run --config-file prod.config.js",
-    "stg:open": "cypress open --env configFile=staging"
+    "stg:open": "cypress open --env configFile=staging",
+    "contact-us-po": "cypress run --spec cypress/e2e/contact-us/contact-us.po.cy.js"
   },
   "keywords": [],
   "author": "",
