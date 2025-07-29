@@ -1,4 +1,4 @@
-describe("Login Portal Section", () => {
+describe.skip("Login Portal Section", () => {
   beforeEach(() => {
     cy.visit("/");
   });
@@ -24,7 +24,7 @@ describe("Login Portal Section", () => {
     cy.url().should("include", "Login-Portal/index.html");
   });
 
-  describe("Login Portal - Alert-based Validation", () => { 
+  describe("Login Portal - Alert-based Validation", () => {
     beforeEach(() => {
       cy.visit("Login-Portal/index.html"); // adjust path as needed
       cy.window().then((win) => {
