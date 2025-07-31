@@ -5,6 +5,7 @@ module.exports = defineConfig({
   defaultCommandTimeout: 20000,
   // - Request timeout: is 5000 by default, used to set the request timeout
   requestTimeout: 10000,
+  projectId: "xs73xg",
   // - Response timeout: is 30000 by default, used to set the response timeout
   responseTimeout: 10000,
   reporter: "cypress-mochawesome-reporter",

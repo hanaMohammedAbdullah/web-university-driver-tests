@@ -9,7 +9,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:run:headless": "cypress run --headless",
-    "cypress:run:headless:record": "cypress run --headless --record",
+    "cypress:run:headless:record": "npx cypress run --record --key e09574c6-d4e0-4cd1-8ec4-4d3d3de3a1a5",
     "cypress:run:report": "npx cypress run --reporter mochawesome",
     "report": "npx cypress run && npx mochawesome-merge cypress/results/*.json > mochawesome.json && npx marge mochawesome.json",
     "stg:web": "cypress run --config-file stag.config.js",
