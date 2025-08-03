@@ -77,4 +77,18 @@ describe("Contact Us Form", () => {
     const contactUsPO = new Contact_Us_PO();
     contactUsPO.verifyAllFieldsRequiredMessage();
   });
+
+  /* ==== Test Created with Cypress Studio ==== */
+  it('TestStudio', function() {
+    /* ==== Generated with Cypress Studio ==== */
+    cy.get('[name="first_name"]').clear('h');
+    cy.get('[name="first_name"]').type('hi what is your name this is aonly a simple test to check this work ');
+    cy.get('[name="last_name"]').clear('s');
+    cy.get('[name="last_name"]').type('studio ');
+    cy.get('[name="email"]').clear('s');
+    cy.get('[name="email"]').type('studio@gmaik.com');
+    cy.get('textarea.feedback-input').click();
+    cy.get('[type="submit"]').click();
+    /* ==== End Cypress Studio ==== */
+  });
 });

@@ -17,6 +17,8 @@ module.exports = defineConfig({
   },
 
   e2e: {
+    experimentalStudio: true,
+
     setupNodeEvents(on, config) {
       // this is a plugin that generates mochawesome reports
       require("cypress-mochawesome-reporter/plugin")(on);
