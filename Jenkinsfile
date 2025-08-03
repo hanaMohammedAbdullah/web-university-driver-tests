@@ -14,11 +14,11 @@ pipline{
                         label 'Slav1'
                     }
                     steps {
+                        echo 'Running on Slave Node1'
                         git url: 'https://github.com/hanaMohammedAbdullah/web-university-driver-tests.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat 'npm run cypress:run:headless:record'
-                        echo 'Running on Slave Node1'
+                        bat 'npm run %Script%'
                         // Add steps for Slave Node1 here
                     }
                 }
@@ -27,12 +27,12 @@ pipline{
                         label 'slav2'
                     }
                     steps {
-                        git url: `https://github.com/hanaMohammedAbdullah/web-university-driver-tests.git`
+                         echo 'Running on Slave Node1'
+                        git url: 'https://github.com/hanaMohammedAbdullah/web-university-driver-tests.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat 'npm run cypress:run:headless:record'
-                        echo 'Running on Slave Node1'
-                        // Add steps for Slave Node1 here
+                        bat 'npm run %Script%'
+                //         // Add steps for Slave Node1 here
                     }
                 }
             }
