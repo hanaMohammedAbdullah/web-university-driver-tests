@@ -14,7 +14,7 @@ pipline{
                         label 'Slav1'
                     }
                     steps {
-                        git url: `https://github.com/hanaMohammedAbdullah/web-university-driver-tests.git`
+                        git url: 'https://github.com/hanaMohammedAbdullah/web-university-driver-tests.git'
                         bat 'npm install'
                         bat 'npm update'
                         bat 'npm run cypress:run:headless:record'
